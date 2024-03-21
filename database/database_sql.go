@@ -23,10 +23,12 @@ func StartDB_SQL() {
 		Logger: logger.Default.LogMode(logger.Info),
 	})
 	if err != nil {
-		fmt.Println("Erro ao conectar à Database")
+		fmt.Println("Erro ao conectar à Database:", err) // Imprime o erro
+		return
 	}
 	db_sql = database
 }
+
 
 func GetDatabase_SQL() *gorm.DB {
 	return db_sql
