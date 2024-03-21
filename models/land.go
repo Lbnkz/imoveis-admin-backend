@@ -2,7 +2,7 @@ package models
 
 import "gorm.io/gorm"
 
-type Land struct {
+type Terreno struct {
     gorm.Model
     Endereco            string  `gorm:"column:endereco"`
     AreaMetrosQuadrados int     `gorm:"column:area_metros_quadrados"`

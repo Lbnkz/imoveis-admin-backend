@@ -3,7 +3,9 @@ module imoveis-back
 go 1.21.5
 
 require (
+	github.com/gorilla/mux v1.8.1
 	github.com/joho/godotenv v1.5.1
+	github.com/rs/cors v1.10.1
 	gorm.io/driver/postgres v1.5.7
 	gorm.io/gorm v1.25.8
 )
